@@ -1,33 +1,150 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Contact - MNE Global Corp</title>
-    <link rel="stylesheet" href="/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — MNE Global Corporation</title>
+  <link rel="stylesheet" href="/style.css" />
 </head>
-<body>
+<body class="page-body">
 
-<header>
-    <h1>Contact MNE Global Corp</h1>
-    <nav>
-        <a href="/">Home</a>
-        <a href="/about">About</a>
-        <a href="/contact">Contact</a>
-    </nav>
-</header>
+  <!-- NAV -->
+  <nav class="site-nav">
+    <div class="nav-inner">
+      <a href="/" class="nav-logo">
+        <span class="nav-logo-name">MNE Global</span>
+        <span class="nav-logo-tag">Corporation</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
 
-<section class="contact-section">
-    <form id="contactForm">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
-    </form>
-</section>
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="wrapper">
+      <div class="page-hero-inner">
+        <div class="page-hero-kicker">Get in Touch</div>
+        <h1 class="page-hero-title">Contact<br><em>MNE Global</em></h1>
+      </div>
+    </div>
+  </section>
 
-<footer>
-    <p>© 2026 MNE Global Corporation</p>
-</footer>
+  <!-- CONTACT SECTION -->
+  <section class="contact-section">
+    <div class="wrapper">
+      <div class="contact-layout">
 
-<script src="/script.js"></script>
+        <!-- Info side -->
+        <div class="sr">
+          <h3 class="contact-info-title">Let's start a conversation.</h3>
+          <p class="contact-info-text">
+            Whether you're looking to modernise your enterprise infrastructure,
+            launch a new digital product, or explore a strategic partnership —
+            we'd love to hear from you. Fill in the form and we'll respond within
+            one business day.
+          </p>
+          <div class="contact-details">
+            <div class="contact-detail-row">
+              <div class="cd-icon">📍</div>
+              <div>
+                <div class="cd-label">Headquarters</div>
+                <div class="cd-value">India</div>
+              </div>
+            </div>
+            <div class="contact-detail-row">
+              <div class="cd-icon">✉️</div>
+              <div>
+                <div class="cd-label">Email</div>
+                <div class="cd-value">hello@mneglobal.com</div>
+              </div>
+            </div>
+            <div class="contact-detail-row">
+              <div class="cd-icon">🕐</div>
+              <div>
+                <div class="cd-label">Response Time</div>
+                <div class="cd-value">Within 1 business day</div>
+              </div>
+            </div>
+            <div class="contact-detail-row">
+              <div class="cd-icon">🌐</div>
+              <div>
+                <div class="cd-label">Global Reach</div>
+                <div class="cd-value">Serving clients worldwide</div>
+              </div>
+            </div>
+          </div>
+          <div class="eyebrow" style="margin-top:2rem;">Founded by Sumit Chandravasnhi</div>
+        </div>
+
+        <!-- Form side -->
+        <div class="sr sr-d2">
+          <form id="contactForm" class="contact-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="name">Full Name</label>
+                <input class="form-input" type="text" id="name" name="name" placeholder="Your name" required />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="email">Email Address</label>
+                <input class="form-input" type="email" id="email" name="email" placeholder="your@email.com" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="subject">Subject</label>
+              <input class="form-input" type="text" id="subject" name="subject" placeholder="How can we help?" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="message">Message</label>
+              <textarea class="form-textarea" id="message" name="message" placeholder="Tell us about your project or enquiry…" required></textarea>
+            </div>
+            <button type="submit" class="btn-submit">Send Message →</button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="wrapper">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand-name">MNE Global</div>
+          <div class="footer-brand-tag">Corporation</div>
+          <p class="footer-brand-desc">
+            A multinational enterprise focused on digital transformation,
+            enterprise systems, and scalable web solutions.
+          </p>
+        </div>
+        <div>
+          <div class="footer-col-title">Navigation</div>
+          <ul class="footer-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-col-title">Contact</div>
+          <ul class="footer-links">
+            <li><a href="/contact">Send a Message</a></li>
+            <li><a href="mailto:hello@mneglobal.com">hello@mneglobal.com</a></li>
+            <li><a href="#">India</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-copy">© 2026 MNE Global Corporation — Founded by <span>Sumit Chandravasnhi</span></div>
+        <div class="footer-copy">India</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/script.js"></script>
 </body>
 </html>
